@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginMVVM.Views.HomePage" Title="Discovery" IconImageSource="location.png" Padding="17.5" BackgroundColor="LightGray">
+
+    <Grid RowDefinitions="Auto,*,*,*" ColumnDefinitions="*,*" BackgroundColor="LightGray" ColumnSpacing="22" RowSpacing="15">
+
+        <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+            <Image Source="{Binding MenuOption1.Image}" HorizontalOptions="Center" Margin="10" WidthRequest="135" HeightRequest="135"/>
+            <Label Text="{Binding BarAndHotelMenuOption.Title}" HorizontalOptions="Center" TextColor="Black" FontSize="20" CharacterSpacing="1" FontAttributes="Bold"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Grid.Column="1"  VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White"  HorizontalOptions="FillAndExpand">
+            <Image Source="{Binding MenuOption2.Image}" HorizontalOptions="Center" Margin="10" WidthRequest="135" HeightRequest="135"/>
+            <Label Text="{Binding FineDiningMenuOption.Title}" HorizontalOptions="Center"  TextColor="Black" FontSize="20" CharacterSpacing="1" FontAttributes="Bold"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="0"  VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+            <Image Source="{Binding MenuOption3.Image}" HorizontalOptions="Center" Margin="10" WidthRequest="135" HeightRequest="135"/>
+            <Label Text="{Binding CafesMenuOption.Title}" HorizontalOptions="Center"  TextColor="Black" FontSize="20" CharacterSpacing="1" FontAttributes="Bold"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="1"  VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White"  HorizontalOptions="FillAndExpand">
+            <Image Source="{Binding MenuOption4.Image}" HorizontalOptions="Center" Margin="10" WidthRequest="135" HeightRequest="135"/>
+            <Label Text="{Binding NearbyMenuOption.Title}" HorizontalOptions="Center" TextColor="Black" FontSize="20" CharacterSpacing="1" FontAttributes="Bold"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" Grid.Column="0"  VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+            <Image Source="{Binding MenuOption5.Image}" HorizontalOptions="Center" Margin="10" WidthRequest="135" HeightRequest="135"/>
+            <Label Text="{Binding FastFoodsMenuOption.Title}" HorizontalOptions="Center" TextColor="Black" FontSize="20" CharacterSpacing="1" FontAttributes="Bold"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" Grid.Column="1"  VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+            <Image Source="{Binding MenuOption6.Image}" HorizontalOptions="Center" Margin="10" WidthRequest="135" HeightRequest="135"/>
+            <Label Text="{Binding FeaturedFoodsMenuOption.Title}" HorizontalOptions="Center" TextColor="Black" FontSize="20" CharacterSpacing="1" FontAttributes="Bold"/>
+        </StackLayout>
+
+
+    </Grid>
+</ContentPage>
